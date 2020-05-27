@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import MainMenu from '../components/Menu/MainMenu'
 
 
@@ -46,6 +47,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <Helmet>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+   </Helmet>
       <Header siteTitle='Gatsby' />
       <div
         style={{
