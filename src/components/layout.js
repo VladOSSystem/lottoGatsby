@@ -47,9 +47,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Helmet>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
-   </Helmet>
       <Header siteTitle='Gatsby' />
       <div
         style={{
